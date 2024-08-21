@@ -1,20 +1,20 @@
 import React from 'react'
 
-function Footer() {
+function footer() {
   return (
     <div>
-      <div>
-        <img class="logo" src="">
-        </img>
-      </div>
-      <div>
-
-      </div>
-      <div>
-
-      </div>
+    <div>
+      <img class="logo" src="">
+      </img>
     </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+  </div>
   )
 }
 
-export default Footer
+export default footer
