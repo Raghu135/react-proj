@@ -1,0 +1,50 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    gap: 20px;
+  
+    /* Ensure proper wrapping on small screens */
+    flex-wrap: nowrap;
+  }
+  
+  .home > div {
+    /* Adjust the flex-basis to achieve the 60% (content) and 40% (image) split */
+    &:first-child {
+      flex: 1 1 60%; /* Content takes 60% */
+    }
+    &:last-child {
+      flex: 1 1 40%; /* Image takes 40% */
+    }
+  }
+  
+  /* Image styles */
+  .home_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    max-height: 400px; /* Set a max height for the image */
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 425px) {
+    .home {
+      flex-direction: column; /* Stack content and image vertically */
+      gap: 15px;
+    }
+  
+    .home > div {
+      flex: 1 1 100%; /* Full width for both content and image */
+    }
+  
+    .home_image {
+      max-height: 200px; /* Adjust height for mobile screens */
+    }
+  }
+  
+  .homeintro
+  {
+    font-size: 30px;
+  }
