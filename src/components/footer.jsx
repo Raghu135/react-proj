@@ -2,7 +2,18 @@ import React from 'react'
 
 function footer() {
   return (
-    <div>footer</div>
+    <div>
+      <div>
+        <img class="logo" src="">
+        </img>
+      </div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
   )
 }
 
