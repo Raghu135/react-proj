@@ -15,25 +15,24 @@ const Card = (props) => (
   </div>
 );
 
-
 const NextArrow = (props) => {
-    const { className, onClick } = props;
-    return (
-      <div className={`${className} custom-next-arrow`} onClick={onClick}>
-        ➔
-      </div>
-    );
-  };
-  
-  const PrevArrow = (props) => {
-    const { className, onClick } = props;
-    return (
-      <div className={`${className} custom-prev-arrow`} onClick={onClick}>
-        ←
-      </div>
-    );
-  };
-  
+  const { className, onClick } = props;
+  return (
+    <div className={`${className} custom-next-arrow`} onClick={onClick}>
+      ➔
+    </div>
+  );
+};
+
+const PrevArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div className={`${className} custom-prev-arrow`} onClick={onClick}>
+      ←
+    </div>
+  );
+};
+
 // FeaturedBooks Component
 function FeaturedBooks() {
   const cardsData = [
@@ -106,6 +105,8 @@ function FeaturedBooks() {
     speed: 50,
     slidesToShow: 3, // Number of cards to show at a time
     slidesToScroll: 1,
+    nextArrow: <NextArrow />, // Use custom NextArrow
+    prevArrow: <PrevArrow />, // Use custom PrevArrow
     responsive: [
       {
         breakpoint: 1024, // Adjust for tablet
@@ -123,20 +124,19 @@ function FeaturedBooks() {
   };
 
   return (
-<div className="container featured-books">
-  <h1 style={{ textAlign: 'center' }} className="featured-title">Featured Books</h1>
-  <Slider {...settings}>
-    {cardsData.map((card) => (
-      <Card
-        key={card.id} // Adding unique key for each card
-        title={card.title}
-        content={card.content}
-        imgUrl={card.imgUrl}
-      />
-    ))}
-  </Slider>
-</div>
-
+    <div className="container featured-books">
+      <h1 style={{ textAlign: 'center' }} className="featured-title">Featured Books</h1>
+      <Slider {...settings}>
+        {cardsData.map((card) => (
+          <Card
+            key={card.id} // Adding unique key for each card
+            title={card.title}
+            content={card.content}
+            imgUrl={card.imgUrl}
+          />
+        ))}
+      </Slider>
+    </div>
   );
 }
 
