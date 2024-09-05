@@ -1,72 +1,30 @@
-.carousel-container {
-  width: 100vw;
-  overflow: hidden;
-}
-
-.carousel .carousel-slide {
-  position: relative;
-  transition: transform 0.5s ease-in-out, z-index 0.5s;
-}
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.5, 1.5);
-  }
-}
-
 @keyframes zoom {
-  from {
-    transform: scale(1, 1);
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: scale(1.5, 1.5);
+  100% {
+    transform: scale(1.2);
   }
 }
 
-.carousel-container {
-  width: 100vw;
-  overflow: hidden;
-}
-
-.carousel-slide {
-  position: relative;
-  z-index: 1; /* Default z-index for non-active slides */
-}
-
-.active-slide {
-  z-index: 10; /* Higher z-index for active slide */
-}
-
-.zoom-animation {
+.carousel-inner .carousel-item .officeimg {
+  animation: zoom 20s ease-in-out infinite;
   width: 100%;
+  height: 400px; /* Adjust height as needed */
   object-fit: cover;
-  -webkit-animation: zoom 20s linear infinite;
-  animation: zoom 20s linear infinite;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 
-/* Ensuring the zoom effect happens only for the active slide */
-.active-slide .zoom-animation {
-  -webkit-animation: zoom 20s linear infinite;
-  animation: zoom 20s linear infinite;
-}
-
-.carousel-slide img {
+.carousel-inner .carousel-item .officeimg {
+  animation: zoom 20s ease-in-out infinite;
   width: 100%;
+  height: 400px; /* Adjust height as needed */
   object-fit: cover;
-  transition: transform 0.5s ease-in-out;
-  z-index: 1;
-}
-
-/* The active slide scales up and appears above others */
-.carousel-slide.active-slide img {
-  transform: scale(1.5);
-  z-index: 2;
-}
-
-/* Ensures other slides maintain their original size and layering */
-.carousel-slide:not(.active-slide) img {
-  transform: scale(1);
-  z-index: 1;
 }
