@@ -1,20 +1,21 @@
 import React from 'react';
 import ExampleCarouselImage from './ExampleCarouselImage';
 import Carousel from 'react-bootstrap/Carousel';
+import './Slider.scss'
 
 
 function Slider() {
   return (
-    <Carousel>
+    <Carousel className="fullscreen-carousel">
     <Carousel.Item>
-      <ExampleCarouselImage src="Banner.jpg" text="First slide" />
+      <ExampleCarouselImage src="banner1.jpg" text="First slide" />
       <Carousel.Caption>
         <h3>First slide label</h3>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <ExampleCarouselImage src="Banner.jpg" text="Second slide" />
+      <ExampleCarouselImage src="banner2.jpg" text="Second slide" />
       <Carousel.Caption>
         <h3>Second slide label</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

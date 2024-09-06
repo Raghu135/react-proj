@@ -5,12 +5,13 @@
   }
   
   .card {
-    background: #fff;
+    background: linear-gradient(322deg, rgb(222 220 255) 0%, rgb(180 180 221) 35%, rgba(0, 212, 255, 1) 100%);
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    padding: 10px;
+    padding: 30px;
     text-align: center;
+    margin: 0px 10px;
   }
   
   .card img {
@@ -85,5 +86,24 @@
   .titlediv h3 {
     font-size: 1.2rem;
     text-align: center;
+  }
+  
+
+
+
+
+  .featured-books {
+    position: relative;
+    background-color: #EEEEEE !important;
+    overflow: hidden; // Ensures particles do not overflow the container
+  }
+  
+  .particles-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; // Places the particles behind the content
   }
   

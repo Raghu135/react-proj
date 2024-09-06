@@ -99,14 +99,16 @@ function FeaturedBooks() {
   ];
 
   // Slick carousel settings
-  const settings = {
+ const settings = {
     dots: true,
     infinite: true,
     speed: 50,
     slidesToShow: 3, // Number of cards to show at a time
     slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 1500, // Time in milliseconds between slides
     nextArrow: <NextArrow />, // Use custom NextArrow
-    prevArrow: <PrevArrow />, // Use custom PrevArrow
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024, // Adjust for tablet

@@ -5,11 +5,11 @@ function OurOffice() {
   return (
     <div id="myCarousel" className="carousel slide" data-ride="carousel">
       {/* Indicators */}
-      <ol className="carousel-indicators">
+      {/* <ol className="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
+      </ol> */}
 
       {/* Carousel Items */}
       <div className="carousel-inner">
@@ -36,11 +36,11 @@ function OurOffice() {
       {/* Controls */}
       <a className="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
   <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span className="sr-only">Previous</span>
+  <span className="sr-only"></span>
 </a>
 <a className="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
   <span className="carousel-control-next-icon" aria-hidden="true"></span>
-  <span className="sr-only">Next</span>
+  <span className="sr-only"></span>
 </a>
 
     </div>
