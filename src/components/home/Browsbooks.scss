@@ -1,0 +1,22 @@
+.home {
+    display: flex;
+    flex-direction: row; /* To ensure the sections (text and image) are in the same row */
+    justify-content: space-between; /* Optional: Adds space between the columns */
+    align-items: flex-start; /* Optional: Aligns content at the top of the row */
+  }
+  
+  .section_one {
+    display: flex;
+    flex-direction: column; /* Ensures the h4 and p tags are stacked vertically */
+    width: 60%; /* Adjust this width as needed for layout */
+  }
+  
+  .image_section {
+    width: 40%; /* Adjust this width as needed for layout */
+  }
+  
+  .image_section img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;
+  }
+  

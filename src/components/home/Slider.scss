@@ -1,0 +1,14 @@
+.fullscreen-carousel {
+    height: 100vh;
+  }
+  
+  .fullscreen-carousel .carousel-item {
+    height: 100%;
+  }
+  
+  .fullscreen-carousel .carousel-item img {
+    height: 100%;
+    z-index: 19;
+    object-fit: cover; /* Ensures the image covers the entire height */
+  }
+  
