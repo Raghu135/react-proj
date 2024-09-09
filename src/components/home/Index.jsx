@@ -7,15 +7,19 @@ import MostSellingBooks from './MostSellingBooks'
 import OurOffice from './OurOffice'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // To include the necessary JS for carousel functionality
+import HeroVideo from './HeroVideo'
+import BrowseBooks from './BrowseBooks'
 
 
 function Index() {
   return (
-    <>    
-    <Slider />
+    <>  
+    <HeroVideo/>  
+    {/* <Slider /> */}
     <Introduction />
     <FeaturedBooks/>
-    <OurOffice/>
+    {/* <OurOffice/> */}
+    <BrowseBooks/>
     <MostSellingBooks/>
   </>
   )

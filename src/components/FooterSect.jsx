@@ -7,7 +7,7 @@ function FooterSect() {
       <div className="container-fluid footer__content">
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12 footer__logo">
-            <img src="img/logo.png" className="img-fluid footer__logo-image" alt="Logo" />
+            <img src="img/logo.png" className='footerimg'  alt="Logo" />
             <p>Images are not technically inserted into a web page; images are linked to web pages. The tag creates a holding space for the referenced image.</p>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 footer__links">
