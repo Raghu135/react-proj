@@ -2,13 +2,13 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
+        <div>
     <div>
       <img class="logo" src="">
       </img>
     </div>
     <div>
-
+        <h2>hello</h2>
     </div>
     <div>
 
@@ -17,4 +17,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;

@@ -38,12 +38,14 @@ import React from 'react';
 import MyNav from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Index from './components/home/Index';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <MyNav /> 
       <Index />
+      <Footer/>
     </>
   );
 }
