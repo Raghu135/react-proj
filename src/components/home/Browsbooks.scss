@@ -4,6 +4,14 @@
     justify-content: space-between; /* Optional: Adds space between the columns */
     align-items: flex-start; /* Optional: Aligns content at the top of the row */
   }
+ .homeone{
+  display: flex;
+  flex-direction: row; /* To ensure the sections (text and image) are in the same row */
+  justify-content: space-between; /* Optional: Adds space between the columns */
+  align-items: flex-start; 
+  border-radius: 10px;
+    background-color: #F1F1F1;
+ }
   
   .section_one {
     display: flex;
