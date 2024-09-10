@@ -2,7 +2,7 @@ import React from 'react'
 import './home.scss'
 
 function Introduction() {
-  return (<div class="home">
+  return (<div class="home_introduction">
     <div>
       <h4 class="homeintro">Introduction</h4>
       <span>

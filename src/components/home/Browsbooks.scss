@@ -1,34 +1,74 @@
 .home {
-    display: flex;
-    flex-direction: row; /* To ensure the sections (text and image) are in the same row */
-    justify-content: space-between; /* Optional: Adds space between the columns */
-    align-items: flex-start; /* Optional: Aligns content at the top of the row */
-  }
- .homeone{
-  display: flex;
-  flex-direction: row; /* To ensure the sections (text and image) are in the same row */
-  justify-content: space-between; /* Optional: Adds space between the columns */
-  align-items: flex-start; 
-  border-radius: 10px;
-    background-color: #F1F1F1;
- }
- .icon_section{
   display: flex;
   flex-direction: row;
- }
-  
-  .section_one {
-    display: flex;
-    flex-direction: column; /* Ensures the h4 and p tags are stacked vertically */
-    width: 60%; /* Adjust this width as needed for layout */
+  justify-content: space-between;
+  //align-items: flex-start;
+  padding-top: 50px;
+}
+
+.homeone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-color: #F1F1F1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  padding: 20px;
+}
+
+.section_one {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  // color: white;
+}
+
+.image_section {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.image_section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 50px;
+}
+
+/* Icon and text pair styling */
+.icon_with_text {
+  display: flex;
+  flex-direction: column; /* Ensures the icon and text are stacked vertically */
+  align-items: center; /* Centers the icon and text horizontally */
+}
+
+.icon_with_text svg {
+  font-size: 55px;
+  margin-bottom: 10px; /* Adds some space between the icon and text */
+  // color: white;
+}
+.enquire_btn{
+  width:200px;
+  border-radius: 10px;
+}
+h3 {
+  font-size: 18px;
+  margin: 0;
+  text-align: center; /* Optional: centers the text under the icon */
+}
+
+@media (max-width: 425px) {
+  .homeone {
+    flex-direction: column !important; /* Stack content and image vertically */
+    gap: 15px;
+    align-items: center;
   }
-  
-  .image_section {
-    width: 40%; /* Adjust this width as needed for layout */
-  }
-  
-  .image_section img {
-    max-width: 100%; /* Makes the image responsive */
-    height: auto;
-  }
-  
+}

@@ -62,7 +62,10 @@
     justify-content: space-around;
     padding: 20px;
   }
-  
+  @media (max-width: 425px) {
+  .booksContainer {
+      flex-direction: column !important;
+  }}
   .cardimge {
     display: flex;
     flex-direction: column;

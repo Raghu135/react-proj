@@ -1,4 +1,4 @@
-.home {
+.home_introduction {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,7 +10,7 @@
     flex-wrap: nowrap;
   }
   
-  .home > div {
+  .home_introduction > div {
     /* Adjust the flex-basis to achieve the 60% (content) and 40% (image) split */
     &:first-child {
       flex: 1 1 60%; /* Content takes 60% */
@@ -30,12 +30,12 @@
   
   /* Media query for mobile view */
   @media (max-width: 425px) {
-    .home {
-      flex-direction: column; /* Stack content and image vertically */
+    .home_introduction {
+      flex-direction: column !important; /* Stack content and image vertically */
       gap: 15px;
     }
   
-    .home > div {
+    .home_introduction > div {
       flex: 1 1 100%; /* Full width for both content and image */
     }
   
